@@ -1,0 +1,42 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on May 15, 2023 at 12:23:07 IST
+irun
+	-access +rwc
+	pipe5_tb2.v
+file: pipe5_tb2.v
+	module worklib.pipe5_tb2:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		pipe5_tb2
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.pipe5_tb2:v <0x77b8447c>
+			streams:   6, words:  8234
+		worklib.pipe_MIPS32:v <0x65e02c11>
+			streams:  31, words: 20695
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           25      25
+		Scalar wires:         2       -
+		Always blocks:        5       5
+		Initial blocks:       3       3
+		Pseudo assignments:   2       2
+	Writing initial simulation snapshot: worklib.pipe5_tb2:v
+Loading snapshot worklib.pipe5_tb2:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+R2:    2
+R2:    1
+R2:    3
+R2:    6
+Mem[200]:  7, Mem[198]:      6
+Simulation complete via $finish(1) at time 3 US + 0
+./pipe5_tb2.v:48  #3000 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on May 15, 2023 at 12:23:08 IST  (total: 00:00:01)
